@@ -1,0 +1,22 @@
+[
+  {
+    "sectionName": "About",
+    "sectionId": "about"
+  },
+  {
+    "sectionName": "Services",
+    "sectionId": "services"
+  },
+  {
+    "sectionName": "Career",
+    "sectionId": "career"
+  },
+  {
+    "sectionName": "Gallery",
+    "sectionId": "gallery"
+  },
+  {
+    "sectionName": "Contacts",
+    "sectionId": "contacts"
+  }
+]
