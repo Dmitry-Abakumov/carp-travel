@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontSize: {
         "2.5rem": "2.5rem",
+        "2.75rem": "2.75rem",
         "0.625rem": "0.625rem",
       },
       lineHeight: {
@@ -19,12 +20,21 @@ const config: Config = {
         "3rem": "3rem",
       },
       letterSpacing: {
-        "0.8em": ".8em",
+        "0.8em": "0.8em",
+        "0.2em": "0.2em",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        "primary-text-color": "#ffffff",
+        "secondary-text-color": "rgba(255, 255, 255, 0.2)",
+        "not-active-points": "rgba(255, 255, 255, 0.5)",
+      },
+      maxWidth: {
+        "17.5rem": "17.5rem",
       },
     },
   },

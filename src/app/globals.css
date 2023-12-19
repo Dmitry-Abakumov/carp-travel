@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary-text-color: #ffffff;
-  --secondary-text-color: ;
-}
-
 *,
 *::before,
 *::after {
@@ -70,8 +65,6 @@ hr {
 button {
   font-family: inherit;
   color: inherit;
-}
 
-body {
-  color: var(--primary-text-color);
+  cursor: pointer;
 }

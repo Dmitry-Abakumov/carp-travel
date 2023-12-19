@@ -1,0 +1,1 @@
+export { getCurrentScreenWidth } from "./getCurrentWidth";

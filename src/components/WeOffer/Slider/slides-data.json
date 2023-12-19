@@ -1,0 +1,81 @@
+[
+  {
+    "id": "1",
+    "img": {
+      "mobile": "/images/mobile/we-offer-slide-mob-1.jpg",
+      "tablet": "/images/tablet/we-offer-slide-tab-1.jpg",
+      "desktop": "/images/desktop/we-offer-slide-desk-1.jpg"
+    },
+    "bgImg": {
+      "mobile": "/images/mobile/we-Offer-bg-mob-1.jpg",
+      "tablet": "/images/tablet/we-offer-bg-tab-1.jpg",
+      "desktop": "/images/desktop/we-offer-bg-desk-1.jpg"
+    },
+    "caption": "Feel the adrenaline rush",
+    "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains."
+  },
+
+  {
+    "id": "2",
+    "img": {
+      "mobile": "/images/mobile/we-offer-slide-mob-2.jpg",
+      "tablet": "/images/tablet/we-offer-slide-tab-2.jpg",
+      "desktop": "/images/desktop/we-offer-slide-desk-2.jpg"
+    },
+    "bgImg": {
+      "mobile": "/images/mobile/we-offer-bg-mob-2.jpg",
+      "tablet": "/images/tablet/we-offer-bg-tab2.jpg",
+      "desktop": "/images/desktop/we-offer-bg-desk2.jpg"
+    },
+    "caption": "Destroy your limitations",
+    "description": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks."
+  },
+
+  {
+    "id": "3",
+    "img": {
+      "mobile": "/images/mobile/we-offer-slide-mob-3.jpg",
+      "tablet": "/images/tablet/we-offer-slide-tab-3.jpg",
+      "desktop": "/images/desktop/we-offer-slide-desk-3.jpg"
+    },
+    "bgImg": {
+      "mobile": "/images/mobile/we-offer-bg-mob-3.jpg",
+      "tablet": "/images/tablet/we-offer-bg-tab-3.jpg",
+      "desktop": "/images/desktop/we-offer-bg-desk-3.jpg"
+    },
+    "caption": "Get Inspired",
+    "description": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless."
+  },
+
+  {
+    "id": "4",
+    "img": {
+      "mobile": "/images/mobile/we-offer-slide-mob-4.jpg",
+      "tablet": "/images/tablet/we-offer-slide-tab-4.jpg",
+      "desktop": "/images/desktop/we-offer-slide-desk-4.jpg"
+    },
+    "bgImg": {
+      "mobile": "/images/mobile/we-offer-bg-mob-4.jpg",
+      "tablet": "/images/tablet/we-offer-bg-tab-4.jpg",
+      "desktop": "/images/desktop/we-offer-bg-desk-4.jpg"
+    },
+    "caption": "Overcome your fears",
+    "description": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever."
+  },
+
+  {
+    "id": "5",
+    "img": {
+      "mobile": "/images/mobile/we-offer-slide-mob-5.jpg",
+      "tablet": "/images/tablet/we-offer-slide-tab-5.jpg",
+      "desktop": "/images/desktop/we-offer-slide-desk-5.jpg"
+    },
+    "bgImg": {
+      "mobile": "/images/mobile/we-offer-bg-mob-5.jpg",
+      "tablet": "/images/tablet/we-offer-bg-tab-5.jpg",
+      "desktop": "/images/desktop/we-offer-bg-desk-5.jpg"
+    },
+    "caption": "Trust the flow",
+    "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains."
+  }
+]
