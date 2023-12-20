@@ -11,7 +11,7 @@ const Points = ({ goToSlide, activeSlideIndex }: Props) => {
   return (
     <ul className=" flex flex-col gap-4 mt-6">
       {points.map((el, idx) => (
-        <li className="flex gap-2 align-middle" key={el}>
+        <li className="flex gap-2 items-center" key={el}>
           {activeSlideIndex === idx && (
             <Image
               alt="marker"

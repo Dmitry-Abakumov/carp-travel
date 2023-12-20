@@ -4,6 +4,7 @@ import { useRef, useState, useEffect, RefObject } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
 import { SwiperRef } from "swiper/react";
+import throttle from "lodash.throttle";
 
 import Slide from "./Slide";
 import Points from "./Points";
@@ -40,22 +41,25 @@ const Slider = ({ sectionRef }: Props) => {
   }, []);
 
   useEffect(() => {
-    swiperRef.current?.swiper.on("slideChange", () => {
-      const activeIndex = swiperRef.current?.swiper.realIndex as number;
-      setActiveSlideIndex(activeIndex);
+    swiperRef.current?.swiper.on(
+      "slideChange",
+      throttle(() => {
+        const activeIndex = swiperRef.current?.swiper.realIndex as number;
+        setActiveSlideIndex(activeIndex);
 
-      if (sectionRef) {
-        (sectionRef.current as HTMLElement).style.backgroundImage =
-          getCurrentBgImg({
-            currentScreenWidth,
-            activeIndex,
-          });
-      }
-    });
+        if (sectionRef) {
+          (sectionRef.current as HTMLElement).style.backgroundImage =
+            getCurrentBgImg({
+              currentScreenWidth,
+              activeIndex,
+            });
+        }
+      }, 100)
+    );
   }, [activeSlideIndex, currentScreenWidth, sectionRef]);
 
   const goToSlide = (index: number) => {
-    swiperRef?.current?.swiper.slideTo(index);
+    swiperRef?.current?.swiper.slideToLoop(index);
     swiperRef?.current?.swiper.update();
   };
 
