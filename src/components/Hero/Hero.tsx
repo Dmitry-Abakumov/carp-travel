@@ -34,7 +34,7 @@ const Hero = () => {
           />
           Join now
           <Image
-            alt="button`s decorative elements"
+            alt="button`s decorative element"
             src="/images/svg/right-btn-borders-mob.svg"
             width="42"
             height="53"

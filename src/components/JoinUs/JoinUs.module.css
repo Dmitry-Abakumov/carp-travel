@@ -1,0 +1,10 @@
+.section {
+  padding: 107px 0 56px;
+
+  background-color: #001826;
+
+  background-image: url(/images/mobile/choose-and-join-us-bg-mob.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

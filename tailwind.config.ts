@@ -13,9 +13,9 @@ const config: Config = {
         "2.5rem": "2.5rem",
         "2.75rem": "2.75rem",
         "0.625rem": "0.625rem",
+        "3.5rem": "3.5rem",
       },
       lineHeight: {
-        normal: "1.5",
         "3.5rem": "3.5rem",
         "3rem": "3rem",
       },
@@ -32,9 +32,11 @@ const config: Config = {
         "primary-text-color": "#ffffff",
         "secondary-text-color": "rgba(255, 255, 255, 0.2)",
         "not-active-points": "rgba(255, 255, 255, 0.5)",
+        "input-bg-color": "rgba(255, 255, 255, 0.05)",
       },
       maxWidth: {
         "17.5rem": "17.5rem",
+        "11.25rem": "11.25rem",
       },
     },
   },
