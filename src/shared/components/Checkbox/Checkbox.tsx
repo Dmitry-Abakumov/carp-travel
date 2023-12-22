@@ -14,9 +14,9 @@ const Checkbox = forwardRef<HTMLInputElement, Props>(
 
     const id = nanoid();
     return (
-      <>
+      <div className="flex items-center gap-2">
         <label
-          className="flex items-center justify-center border border-primary-text-color w-6 h-6"
+          className="flex shrink-0 items-center justify-center border border-primary-text-color w-6 h-6"
           htmlFor={id}
         >
           <span className={finalSpanClassName} />
@@ -34,7 +34,7 @@ const Checkbox = forwardRef<HTMLInputElement, Props>(
           ref={ref}
           id={id}
         />
-      </>
+      </div>
     );
   }
 );

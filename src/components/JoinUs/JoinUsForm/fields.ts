@@ -13,8 +13,7 @@ const fields = {
   },
   phone: {
     label: "Phone",
-    defaultValue: "+ 38",
-    placeholder: "(097) 12 34 567",
+    defaultValue: "+ 380",
   },
   message: {
     label: "Message",

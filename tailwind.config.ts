@@ -33,10 +33,14 @@ const config: Config = {
         "secondary-text-color": "rgba(255, 255, 255, 0.2)",
         "not-active-points": "rgba(255, 255, 255, 0.5)",
         "input-bg-color": "rgba(255, 255, 255, 0.05)",
+        "error-color": "#FF5757",
       },
       maxWidth: {
         "17.5rem": "17.5rem",
         "11.25rem": "11.25rem",
+      },
+      spacing: {
+        "0.375rem": "0.375rem",
       },
     },
   },
