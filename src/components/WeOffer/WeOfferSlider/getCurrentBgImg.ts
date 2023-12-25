@@ -1,4 +1,4 @@
-import slidesData from "./slides-data.json";
+import slidesData from "./we-offer-slider-data.json";
 
 type Args = {
   currentScreenWidth: number;

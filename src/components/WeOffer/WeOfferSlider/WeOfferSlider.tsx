@@ -1,15 +1,16 @@
 "use client";
 
 import { useRef, useState, useEffect, RefObject } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, SwiperRef, useSwiper } from "swiper/react";
 import { EffectFade } from "swiper/modules";
-import { SwiperRef } from "swiper/react";
 import throttle from "lodash.throttle";
 
-import Slide from "./Slide";
+import WeOfferSliderItem from "./WeOfferSliderItem";
 import Points from "./Points";
 
-import slides from "./slides-data.json";
+import { useCurrentScreenWidth } from "@/shared/hooks";
+
+import slides from "./we-offer-slider-data.json";
 import settings from "./settings";
 
 import { getCurrentBgImg } from "./getCurrentBgImg";
@@ -21,24 +22,10 @@ type Props = {
   sectionRef: RefObject<HTMLElement>;
 };
 
-const Slider = ({ sectionRef }: Props) => {
+const WeOfferSlider = ({ sectionRef }: Props) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  const [currentScreenWidth, setCurrentScreenWidth] = useState(() =>
-    getCurrentScreenWidth()
-  );
   const swiperRef = useRef<SwiperRef>(null);
-
-  const resizeHandler = () => {
-    setCurrentScreenWidth(getCurrentScreenWidth());
-  };
-
-  useEffect(() => {
-    document.addEventListener("resize", resizeHandler);
-
-    return () => {
-      document.removeEventListener("resize", resizeHandler);
-    };
-  }, []);
+  const { currentScreenWidth } = useCurrentScreenWidth();
 
   useEffect(() => {
     swiperRef.current?.swiper.on(
@@ -75,9 +62,9 @@ const Slider = ({ sectionRef }: Props) => {
         modules={[EffectFade]}
         {...settings}
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <Slide key={slide.id} {...slide} />
+        {slides.map(({ id, ...slide }) => (
+          <SwiperSlide key={id}>
+            <WeOfferSliderItem {...slide} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -93,4 +80,4 @@ const Slider = ({ sectionRef }: Props) => {
   );
 };
 
-export default Slider;
+export default WeOfferSlider;

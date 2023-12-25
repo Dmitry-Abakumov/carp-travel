@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 
-import Slider from "./Slider";
+import WeOfferSlider from "./WeOfferSlider";
 
 import Container from "@/shared/components/Container";
 
@@ -18,7 +18,7 @@ const WeOffer = () => {
           <span className="font-thin">We</span> offer
         </h2>
 
-        <Slider sectionRef={sectionRef} />
+        <WeOfferSlider sectionRef={sectionRef} />
       </Container>
     </section>
   );

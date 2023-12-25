@@ -1,0 +1,10 @@
+.section {
+  padding: 56px 0;
+
+  background-color: #001826;
+
+  background-image: url(/images/mobile/contact-us-bg-mob.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
