@@ -6,7 +6,9 @@ type Props = {
 };
 
 const Container = ({ children, className }: Props) => {
-  const finalClassName = className ? `pl-5 pr-5 ${className}` : `pl-5 pr-5`;
+  const finalClassName = className
+    ? `${css.container} ${className}`
+    : css.container;
 
   return <div className={finalClassName}>{children}</div>;
 };

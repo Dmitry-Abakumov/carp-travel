@@ -1,2 +1,2 @@
-export { getCurrentScreenWidth } from "./getCurrentWidth";
+export { getCurrentScreenWidth } from "./getCurrentScreenWidth";
 export * as regularExpressions from "./regularExpressions";

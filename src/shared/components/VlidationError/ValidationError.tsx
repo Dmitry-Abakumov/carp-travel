@@ -9,7 +9,7 @@ const ValidationError = ({ errorMessage }: Props) => {
     <div className="flex justify-end items-center gap-1">
       <Image
         alt="cross"
-        src="/images/svg/validation-error.svg"
+        src="/images/svg/shared/validation-error.svg"
         width="9"
         height="9"
       />

@@ -17,8 +17,8 @@ const OurGallerySlider = () => {
   const { currentScreenWidth } = useCurrentScreenWidth();
   return (
     <Swiper
-      className="max-w-17.5rem"
-      slidesPerView={currentScreenWidth < 768 ? 3 : 1}
+      className="max-w-280px"
+      slidesPerView={(currentScreenWidth as number) < 768 ? 3 : 1}
       direction="vertical"
       // {...settings}
       ref={swiperRef}

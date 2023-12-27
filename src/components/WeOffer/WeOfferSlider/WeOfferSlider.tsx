@@ -14,7 +14,6 @@ import slides from "./we-offer-slider-data.json";
 import settings from "./settings";
 
 import { getCurrentBgImg } from "./getCurrentBgImg";
-import { getCurrentScreenWidth } from "@/shared/utils";
 
 import "swiper/css";
 
@@ -34,7 +33,7 @@ const WeOfferSlider = ({ sectionRef }: Props) => {
         const activeIndex = swiperRef.current?.swiper.realIndex as number;
         setActiveSlideIndex(activeIndex);
 
-        if (sectionRef) {
+        if (sectionRef && typeof currentScreenWidth === "number") {
           (sectionRef.current as HTMLElement).style.backgroundImage =
             getCurrentBgImg({
               currentScreenWidth,
@@ -52,12 +51,12 @@ const WeOfferSlider = ({ sectionRef }: Props) => {
 
   return (
     <>
-      <p className="font-thin text-2.75rem/normal text-end mt-6">
+      <p className="font-thin text-44px/normal text-end mt-6">
         0{activeSlideIndex + 1}/
         <span className="text-secondary-text-color">0{`${slides.length}`}</span>
       </p>
       <Swiper
-        className="max-w-17.5rem"
+        className="max-w-280px"
         ref={swiperRef}
         modules={[EffectFade]}
         {...settings}

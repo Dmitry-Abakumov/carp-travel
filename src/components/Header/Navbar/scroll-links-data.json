@@ -5,18 +5,18 @@
   },
   {
     "sectionName": "Services",
-    "sectionId": "services"
+    "sectionId": "weOffer"
   },
   {
     "sectionName": "Career",
-    "sectionId": "career"
+    "sectionId": "joinUs"
   },
   {
     "sectionName": "Gallery",
-    "sectionId": "gallery"
+    "sectionId": "ourGallery"
   },
   {
     "sectionName": "Contacts",
-    "sectionId": "contacts"
+    "sectionId": "contactUs"
   }
 ]

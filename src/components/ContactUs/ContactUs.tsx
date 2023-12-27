@@ -7,9 +7,9 @@ import css from "./ContactUs.module.css";
 
 const ContactUs = () => {
   return (
-    <section className={css.section}>
+    <section id="contactUs" className={css.section}>
       <Container>
-        <h2 className="uppercase font-thin text-2.5rem/3.5rem tracking-tighter">
+        <h2 className="uppercase font-thin text-40px/56px tracking-tighter">
           Contact <span className="font-medium">US</span>
         </h2>
         <Links />

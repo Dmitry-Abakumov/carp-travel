@@ -10,23 +10,23 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        "2.5rem": "2.5rem",
-        "2.75rem": "2.75rem",
-        "0.625rem": "0.625rem",
-        "3.5rem": "3.5rem",
+        "40px": "40px",
+        "44px": "44px",
+        "10px": "10px",
+        "56px": "56px",
+        "67px": "67px",
       },
       lineHeight: {
-        "3.5rem": "3.5rem",
-        "3rem": "3rem",
+        "56px": "56px",
+        "48px": "48px",
+        "0.9em": "0.9em",
       },
       letterSpacing: {
         "0.8em": "0.8em",
         "0.2em": "0.2em",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "1.85em": "1.85em",
+        "0.13em": "0.13em",
+        "0.04em": "0.04em",
       },
       colors: {
         "primary-text-color": "#ffffff",
@@ -36,12 +36,26 @@ const config: Config = {
         "error-color": "#FF5757",
       },
       maxWidth: {
-        "17.5rem": "17.5rem",
-        "11.25rem": "11.25rem",
+        "280px": "280px",
+        "180px": "180px",
+        "426px": "426px",
       },
       spacing: {
-        "0.375rem": "0.375rem",
-        "2.875rem": "2.875rem",
+        "46px": "46px",
+        "48px": "48px",
+        "68px": "68px",
+        "76px": "76px",
+      },
+      screens: {
+        xs: "480px",
+      },
+      width: {
+        "480px": "480px",
+        "768px": "768px",
+        "1280px": "1280px",
+        "230px": "230px",
+        "118px": "118px",
+        "262px": "262px",
       },
     },
   },

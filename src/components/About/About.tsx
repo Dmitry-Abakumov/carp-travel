@@ -9,15 +9,20 @@ const About = () => {
   return (
     <section id="about" className={css.section}>
       <Container>
-        <h2 className="uppercase text-2.5rem/3.5rem font-medium tracking-tighter">
-          <span className="font-thin">Who</span> we are
-        </h2>
-        <p className="mt-2 font-extralight text-sm w-44 ">
-          <span className="font-normal">a team of enthusiasts</span> {aboutTeam}
-        </p>
-        <p className=" font-extralight text-sm w-44 mt-5">
-          <span className="font-normal">We believe</span> {weBelieve}
-        </p>
+        <div className="flex gap-76px">
+          <h2 className="uppercase text-40px/56px font-medium -tracking-0.04em md:text-67px/normal">
+            <span className="font-thin">Who</span> we are
+          </h2>
+          <div>
+            <p className="mt-2 font-extralight text-sm w-44 md:text-base/5">
+              <span className="font-normal">a team of enthusiasts</span>{" "}
+              {aboutTeam}
+            </p>
+            <p className=" font-extralight text-sm w-44 mt-5 md:text-base/5">
+              <span className="font-normal">We believe</span> {weBelieve}
+            </p>
+          </div>
+        </div>
 
         <p className="uppercase text-end pr-10 text-sm mt-10">
           From vacationers

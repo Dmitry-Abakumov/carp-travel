@@ -15,7 +15,7 @@ const Points = ({ goToSlide, activeSlideIndex }: Props) => {
           {activeSlideIndex === idx && (
             <Image
               alt="marker"
-              src="/images/svg/active-point-marker.svg"
+              src="/images/svg/shared/active-point-marker.svg"
               width="6"
               height="6"
             />

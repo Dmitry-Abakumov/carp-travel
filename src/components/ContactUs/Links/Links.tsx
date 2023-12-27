@@ -15,7 +15,7 @@ const Links = () => {
         </li>
       </ul>
 
-      <div className="flex self-end items-center gap-5 mr-2.875rem">
+      <div className="flex self-end items-center gap-5 mr-46px">
         <a className="text-sm/6" href="mailto:support@carptravel.com" lang="en">
           support@carptravel.com
         </a>
