@@ -8,18 +8,18 @@ import {
 
 const validationSchema = object({
   name: string()
-    .required("Please, enter your name")
+    .required("Please, enter a name")
     .matches(onlyTextAndTabsRegex, "Incorrect name"),
   email: string()
-    .required("Please, enter your email")
+    .required("Please, enter a email")
     .max(50)
     .matches(emailRegex, "Incorrect email"),
   position: string()
-    .required("Please, enter desired position")
-    .matches(onlyTextAndTabsRegex, "Incorrect email"),
+    .required("Please, enter a position")
+    .matches(onlyTextAndTabsRegex, "Incorrect position"),
   phone: string()
-    .required("Please, enter your phone number")
-    .matches(phoneRegex, "Incorrect Phone"),
+    .required("Please, enter a phone")
+    .matches(phoneRegex, "Incorrect phone"),
   message: string()
     .max(500, "Maximum allowed number of characters - 500")
     .default(""),

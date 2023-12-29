@@ -2,11 +2,12 @@ import Image from "next/image";
 
 type Props = {
   errorMessage: string;
+  className?: string;
 };
 
-const ValidationError = ({ errorMessage }: Props) => {
+const ValidationError = ({ errorMessage, className }: Props) => {
   return (
-    <div className="flex justify-end items-center gap-1">
+    <div className={`flex justify-end items-center gap-1 ${className}`}>
       <Image
         alt="cross"
         src="/images/svg/shared/validation-error.svg"

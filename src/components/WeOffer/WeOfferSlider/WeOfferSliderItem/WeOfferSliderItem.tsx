@@ -14,23 +14,20 @@ type Props = {
   caption: string;
 };
 
-const WeOfferSliderItem = ({ img, caption }: Props) => {
+const WeOfferSliderItem = ({ img }: Props) => {
   return (
     <>
       <picture>
-        {/* <source srcSet={img.desktop} media="(min-width: 1280px)" /> */}
+        <source srcSet={img.tablet} media="(min-width: 768px)" />
         <Image
+          className="md:w-full md:h-auto"
           alt=""
           src={img.mobile}
           loading="lazy"
-          width={280}
-          height={213}
+          width="280"
+          height="413"
         />
       </picture>
-
-      <p className="text-end mt-3 font-extralight text-xs/6 tracking-0.2em">
-        {caption}
-      </p>
     </>
   );
 };

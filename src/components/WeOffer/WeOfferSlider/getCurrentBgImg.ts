@@ -2,17 +2,20 @@ import slidesData from "./we-offer-slider-data.json";
 
 type Args = {
   currentScreenWidth: number;
-  activeIndex: number;
+  activeSlideIndex: number;
 };
 
-export const getCurrentBgImg = ({ currentScreenWidth, activeIndex }: Args) => {
+export const getCurrentBgImg = ({
+  currentScreenWidth,
+  activeSlideIndex,
+}: Args) => {
   if (currentScreenWidth < 768) {
-    return `url(${slidesData[activeIndex].bgImg.mobile})`;
+    return `url(${slidesData[activeSlideIndex].bgImg.mobile})`;
   }
 
   if (currentScreenWidth > 767 && currentScreenWidth < 1280) {
-    return `url(${slidesData[activeIndex].bgImg.tablet})`;
+    return `url(${slidesData[activeSlideIndex].bgImg.tablet})`;
   }
 
-  return `url("${slidesData[activeIndex].bgImg.desktop})"`;
+  return `url("${slidesData[activeSlideIndex].bgImg.desktop})"`;
 };

@@ -4,17 +4,11 @@ import Image from "next/image";
 
 import Container from "@/shared/components/Container";
 
-import { getCurrentScreenWidth } from "@/shared/utils";
-import { useCurrentScreenWidth } from "@/shared/hooks";
-
-import { getBtnImgSizes } from "./getBtnImgSizes";
-
 import data from "./hero-data.json";
 
 import css from "./Hero.module.css";
 
 const Hero = () => {
-  const { currentScreenWidth } = useCurrentScreenWidth();
   const { places, weOffer } = data;
 
   return (
@@ -27,12 +21,12 @@ const Hero = () => {
               journey
             </span>
           </p>
-          <h1 className="mt-6 text-40px leading-56px font-thin -tracking-0.04em max-w-xs uppercase md:text-67px/normal md:mt-0 md:max-w-426px">
+          <h1 className="mt-6 text-40px/56px font-thin -tracking-0.04em max-w-280px uppercase md:text-67px/tight md:mt-0 md:max-w-426px">
             <span className="font-medium">Uncover</span> Carpathian’s secrets
           </h1>
         </div>
 
-        <p className="font-extralight leading-4 text-10px/4 w-40 mt-6 md:text-sm/0.9em md:mt-68px md:w-262px">
+        <p className="font-extralight leading-4 text-10px/4 w-40 mt-6 md:text-sm/4 md:mt-68px md:w-262px">
           {places}
         </p>
 
@@ -47,10 +41,11 @@ const Hero = () => {
                 media="(min-width: 768px)"
               />
               <Image
+                className="w-42px h-53px md:w-35px md:h-50px xl:w-44px xl:h-71px"
                 alt="button`s decorative elements"
                 src="/images/svg/mobile/left-btn-borders-mob.svg"
-                width={getBtnImgSizes(currentScreenWidth as number)?.width}
-                height={getBtnImgSizes(currentScreenWidth as number)?.height}
+                width="0"
+                height="0"
               />
             </picture>
             Join now
@@ -60,10 +55,11 @@ const Hero = () => {
                 media="(min-width: 768px)"
               />
               <Image
+                className="w-42px h-53px md:w-35px md:h-50px xl:w-44px xl:h-71px"
                 alt="button`s decorative element"
                 src="/images/svg/mobile/right-btn-borders-mob.svg"
-                width={getBtnImgSizes(currentScreenWidth as number)?.width}
-                height={getBtnImgSizes(currentScreenWidth as number)?.height}
+                width="0"
+                height="0"
               />
             </picture>
           </button>
