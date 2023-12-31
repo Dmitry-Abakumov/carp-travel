@@ -3,8 +3,7 @@
     "id": "1",
     "img": {
       "mobile": "/images/mobile/our-gallery-slide-mob-1.jpg",
-      "tablet": "/images/tablet/our-gallery-slide-tab-1.jpg",
-      "desktop": "/images/desktop/our-gallery-slide-desk-1.jpg"
+      "tabDesk": "/images/tab-and-desk/our-gallery-slide-tab-desk-1.jpg"
     }
   },
 
@@ -12,8 +11,7 @@
     "id": "2",
     "img": {
       "mobile": "/images/mobile/our-gallery-slide-mob-2.jpg",
-      "tablet": "/images/tablet/our-gallery-slide-tab-2.jpg",
-      "desktop": "/images/desktop/our-gallery-slide-desk-2.jpg"
+      "tabDesk": "/images/tab-and-desk/our-gallery-slide-tab-desk-2.jpg"
     }
   },
 
@@ -21,8 +19,30 @@
     "id": "3",
     "img": {
       "mobile": "/images/mobile/our-gallery-slide-mob-3.jpg",
-      "tablet": "/images/tablet/our-gallery-slide-tab-3.jpg",
-      "desktop": "/images/desktop/our-gallery-slide-desk-3.jpg"
+      "tabDesk": "/images/tab-and-desk/our-gallery-slide-tab-desk-3.jpg"
+    }
+  },
+  {
+    "id": "4",
+    "img": {
+      "mobile": "/images/mobile/our-gallery-slide-mob-1.jpg",
+      "tabDesk": "/images/tab-and-desk/our-gallery-slide-tab-desk-1.jpg"
+    }
+  },
+
+  {
+    "id": "5",
+    "img": {
+      "mobile": "/images/mobile/our-gallery-slide-mob-2.jpg",
+      "tabDesk": "/images/tab-and-desk/our-gallery-slide-tab-desk-2.jpg"
+    }
+  },
+
+  {
+    "id": "6",
+    "img": {
+      "mobile": "/images/mobile/our-gallery-slide-mob-3.jpg",
+      "tabDesk": "/images/tab-and-desk/our-gallery-slide-tab-desk-3.jpg"
     }
   }
 ]

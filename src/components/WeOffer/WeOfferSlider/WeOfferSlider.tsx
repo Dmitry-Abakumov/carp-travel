@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState, useEffect, useCallback, RefObject } from "react";
-import { Swiper, SwiperSlide, SwiperRef, useSwiper } from "swiper/react";
+import { useRef, useState, useEffect, RefObject } from "react";
+import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import { EffectFade } from "swiper/modules";
 import throttle from "lodash.throttle";
 
