@@ -27,13 +27,10 @@ const WeOfferSlider = ({ sectionRef }: Props) => {
   const { currentScreenWidth } = useCurrentScreenWidth();
 
   useEffect(() => {
-    swiperRef.current?.swiper.on(
-      "slideChange",
-      throttle(() => {
-        const activeIndex = swiperRef.current?.swiper.realIndex as number;
-        setActiveSlideIndex(activeIndex);
-      }, 100)
-    );
+    swiperRef.current?.swiper.on("slideChange", () => {
+      const activeIndex = swiperRef.current?.swiper.realIndex as number;
+      setActiveSlideIndex(activeIndex);
+    });
 
     if (sectionRef && typeof currentScreenWidth === "number") {
       (sectionRef.current as HTMLElement).style.backgroundImage =

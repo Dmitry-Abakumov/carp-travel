@@ -2,7 +2,7 @@
 
 @layer components {
   .baseSlide {
-    @apply absolute bottom-0 md:static md:w-415px md:h-294px;
+    @apply absolute bottom-0 md:static md:w-415px md:h-294px md:max-w-none;
   }
 }
 
@@ -10,10 +10,6 @@
   .noActiveSlide {
     width: 120px;
     height: 86px;
-  }
-
-  .imgWrap {
-    position: relative;
   }
 
   .imgWrap::after {

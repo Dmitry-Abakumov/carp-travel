@@ -1,3 +1,9 @@
-.swiperContainer {
-  display: block;
+@media screen and (min-width: 768px) {
+  .wrapper {
+    gap: 24px;
+  }
+
+  .slide {
+    width: fit-content;
+  }
 }

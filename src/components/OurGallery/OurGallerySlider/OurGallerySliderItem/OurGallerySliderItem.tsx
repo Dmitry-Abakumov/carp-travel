@@ -13,9 +13,11 @@ type Props = {
 
 const OurGAllerySliderItem = ({ img, activeSlideIdx, slideIdx }: Props) => {
   return (
-    <picture className="md:inline-block">
+    <picture>
       <source srcSet={img.tabDesk} media="(min-width: 768px)" />
-      <div className={activeSlideIdx === slideIdx ? "" : css.imgWrap}>
+      <div
+        className={activeSlideIdx === slideIdx ? "" : "md:relative md:w-120px"}
+      >
         <Image
           className={
             activeSlideIdx === slideIdx
