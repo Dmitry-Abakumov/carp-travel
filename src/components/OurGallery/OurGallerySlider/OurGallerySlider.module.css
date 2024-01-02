@@ -1,9 +1,22 @@
 @media screen and (min-width: 768px) {
-  .wrapper {
-    gap: 24px;
+  .imgWrap {
+    position: relative;
   }
 
-  .slide {
-    width: fit-content;
+  .imgWrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 86px;
+    background: linear-gradient(
+      rgba(2, 15, 8, 0.75),
+      rgba(2, 15, 8, 0.75),
+      rgba(2, 15, 8, 0.75)
+    );
   }
 }

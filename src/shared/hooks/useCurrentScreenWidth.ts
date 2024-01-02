@@ -3,9 +3,7 @@ import { useState, useEffect } from "react";
 import { getCurrentScreenWidth } from "../utils";
 
 export const useCurrentScreenWidth = () => {
-  const [currentScreenWidth, setCurrentScreenWidth] = useState(() =>
-    getCurrentScreenWidth()
-  );
+  const [currentScreenWidth, setCurrentScreenWidth] = useState<number>();
 
   const resizeHandler = () => {
     setCurrentScreenWidth(getCurrentScreenWidth());
@@ -13,6 +11,7 @@ export const useCurrentScreenWidth = () => {
 
   useEffect(() => {
     window.addEventListener("resize", resizeHandler);
+    setCurrentScreenWidth(getCurrentScreenWidth());
 
     return () => {
       window.removeEventListener("resize", resizeHandler);

@@ -7,7 +7,8 @@ const settings = {
   loop: true,
   centeredSlides: true,
   initialSlide: 1,
-  slidesPerView: 3,
+  spaceBetween: 0,
+  // slidesPerView: 3,
 };
 
 export default settings;

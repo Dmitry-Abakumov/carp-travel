@@ -7,9 +7,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .noActiveSlide {
-    width: 120px;
-    height: 86px;
+  .imgWrap {
+    position: relative;
   }
 
   .imgWrap::after {

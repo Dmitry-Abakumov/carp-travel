@@ -30,7 +30,7 @@ const Hero = () => {
           {places}
         </p>
 
-        <div className="mt-6 md:absolute md:bottom-0 md:right-8 md:mt-0">
+        <div className="mt-6 md:absolute md:bottom-0 md:right-8 md:mt-0 md:w-[230px]">
           <p className="text-justify font-extralight text-sm md:w-[230px ]md:text-base/5">
             {weOffer}
           </p>

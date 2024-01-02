@@ -1,3 +1,5 @@
+"use client";
+
 import OurGallerySlider from "./OurGallerySlider/OurGallerySlider";
 
 import Container from "@/shared/components/Container";
@@ -8,7 +10,7 @@ const OurGallery = () => {
   return (
     <section id="ourGallery" className={css.section}>
       <Container>
-        <h2 className="uppercase font-medium text-[40px]/[56px] tracking-tighter">
+        <h2 className="uppercase font-medium text-[40px]/[1.4] tracking-tighter md:text-center">
           <span className="font-thin">Our</span> gallery
         </h2>
         <OurGallerySlider />
