@@ -8,7 +8,7 @@ import css from "./Career.module.css";
 const Career = () => {
   return (
     <section className={css.section}>
-      <div className="md:relative md:pr-8 md:pl-8 md:mr-auto md:ml-auto md:w-768px xl:w-1280px">
+      <div className="md:relative md:pr-8 md:pl-8 md:mr-auto md:ml-auto md:w-[768px] xl:w-[1280px]">
         <CareerInfo />
         <JoinUs />
       </div>

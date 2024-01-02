@@ -16,7 +16,9 @@ const OurGAllerySliderItem = ({ img, activeSlideIdx, slideIdx }: Props) => {
     <picture>
       <source srcSet={img.tabDesk} media="(min-width: 768px)" />
       <div
-        className={activeSlideIdx === slideIdx ? "" : "md:relative md:w-120px"}
+        className={
+          activeSlideIdx === slideIdx ? "" : "md:relative md:w-[120px]"
+        }
       >
         <Image
           className={

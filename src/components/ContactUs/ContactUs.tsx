@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <section id="contactUs" className={css.section}>
       <Container>
-        <h2 className="uppercase font-thin text-40px/56px tracking-tighter">
+        <h2 className="uppercase font-thin text-[40px]/[56px] tracking-tighter">
           Contact <span className="font-medium">US</span>
         </h2>
         <Links />

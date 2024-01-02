@@ -33,7 +33,7 @@ const ContactUsForm = () => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div>
-        <label className="font-extralight text-xs/6 tracking-0.2em">
+        <label className="font-extralight text-xs/6 tracking-[0.2em]">
           {fields.name.label}
           <input
             className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
@@ -47,7 +47,7 @@ const ContactUsForm = () => {
       </div>
 
       <div>
-        <label className="font-extralight text-xs/6 tracking-0.2em">
+        <label className="font-extralight text-xs/6 tracking-[0.2em]">
           {fields.email.label}
           <input
             className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
@@ -61,7 +61,7 @@ const ContactUsForm = () => {
       </div>
 
       <div>
-        <label className="font-extralight text-xs/6 tracking-0.2em">
+        <label className="font-extralight text-xs/6 tracking-[0.2em]">
           {fields.message.label}
           <textarea
             className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1"

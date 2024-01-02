@@ -8,7 +8,7 @@ const OurGallery = () => {
   return (
     <section id="ourGallery" className={css.section}>
       <Container>
-        <h2 className="uppercase font-medium text-40px/56px tracking-tighter">
+        <h2 className="uppercase font-medium text-[40px]/[56px] tracking-tighter">
           <span className="font-thin">Our</span> gallery
         </h2>
         <OurGallerySlider />

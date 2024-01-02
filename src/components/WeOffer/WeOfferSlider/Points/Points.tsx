@@ -26,8 +26,8 @@ const Points = ({ goToSlide, activeSlideIndex }: Props) => {
             }}
             className={
               activeSlideIndex === idx
-                ? "font-medium text-xl/4 text-primary-text-color md:text-22px/18px"
-                : "font-extralight text-xl/4 text-not-active-points md:text-22px/18px"
+                ? "font-medium text-xl/4 text-primary-text-color md:text-[22px]/[18px]"
+                : "font-extralight text-xl/4 text-not-active-points md:text-[22px]/[18px]"
             }
           >
             {el}

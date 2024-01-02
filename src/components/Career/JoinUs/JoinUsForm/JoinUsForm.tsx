@@ -43,9 +43,9 @@ const JoinUsForm = () => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="md:flex md:gap-5">
-        <div className="flex flex-col gap-4 md:h-256px">
+        <div className="flex flex-col gap-4 md:h-[256px]">
           <div className="relative">
-            <label className="font-extralight text-xs/6 tracking-0.2em">
+            <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.name.label}
               <input
                 className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
@@ -62,7 +62,7 @@ const JoinUsForm = () => {
           </div>
 
           <div className="relative">
-            <label className="font-extralight text-xs/6 tracking-0.2em">
+            <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.email.label}
               <input
                 className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
@@ -79,7 +79,7 @@ const JoinUsForm = () => {
           </div>
 
           <div className="relative">
-            <label className="font-extralight text-xs/6 tracking-0.2em">
+            <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.position.label}
               <input
                 className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
@@ -96,7 +96,7 @@ const JoinUsForm = () => {
           </div>
 
           <div className="relative">
-            <label className="font-extralight text-xs/6 tracking-0.2em">
+            <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.phone.label}
               <span className="relative block mt-1 font-extralight text-xs/6 tracking-normal">
                 <input
@@ -125,10 +125,10 @@ const JoinUsForm = () => {
         </div>
 
         <div className="relative">
-          <label className="block font-extralight text-xs/6 tracking-0.2em">
+          <label className="block font-extralight text-xs/6 tracking-[0.2em]">
             {fields.message.label}
             <textarea
-              className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:h-235px md:w-220px"
+              className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:h-[235px] md:w-[220px]"
               {...register("message")}
               {...fields.message}
             />
@@ -145,7 +145,7 @@ const JoinUsForm = () => {
       <div className="flex flex-col md:flex-row md:justify-between">
         <div className="relative">
           <Checkbox
-            labelClassName="max-w-192px"
+            labelClassName="max-w-[192px]"
             {...register("confirm")}
             isChecked={watch("confirm")}
             {...fields.confirm}

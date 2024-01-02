@@ -14,7 +14,7 @@ const WeOffer = () => {
   return (
     <section className={css.section} id="weOffer" ref={sectionRef}>
       <Container className="relative">
-        <h2 className="uppercase font-medium text-40px/56px -tracking-0.04em md:text-67px/none">
+        <h2 className="uppercase font-medium text-[40px]/[56px] -tracking-[0.04em] md:text-[67px]/none">
           <span className="font-thin">We</span> offer
         </h2>
 

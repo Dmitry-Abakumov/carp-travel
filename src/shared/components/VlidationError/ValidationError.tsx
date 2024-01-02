@@ -14,7 +14,7 @@ const ValidationError = ({ errorMessage, className }: Props) => {
         width="9"
         height="9"
       />
-      <p className="text-error-color font-extralight text-xs/6 tracking-0.2em">
+      <p className="text-error-color font-extralight text-xs/6 tracking-[0.2em]">
         {errorMessage}
       </p>
     </div>

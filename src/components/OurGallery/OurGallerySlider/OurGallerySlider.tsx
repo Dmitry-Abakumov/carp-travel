@@ -26,7 +26,7 @@ const OurGallerySlider = () => {
 
   return (
     <Swiper
-      className="max-w-280px h-689px pointer-events-none md:flex md:justify-center md:h-auto md:w-full md:max-w-none md:pointer-events-auto"
+      className="max-w-[280px] h-[689px] pointer-events-none md:flex md:justify-center md:h-auto md:w-full md:max-w-none md:pointer-events-auto"
       direction={
         (currentScreenWidth as number) < 768 ? "vertical" : "horizontal"
       }

@@ -48,13 +48,13 @@ const WeOfferSlider = ({ sectionRef }: Props) => {
 
   return (
     <>
-      <p className="font-thin text-44px/normal text-end mt-6 md:mt-0 md:absolute md:top-0 md:right-86px md:text-67px/none">
+      <p className="font-thin text-[44px]/normal text-end mt-6 md:mt-0 md:absolute md:top-0 md:right-[86px] md:text-[67px]/none">
         0{activeSlideIndex + 1}/
         <span className="text-secondary-text-color">0{`${slides.length}`}</span>
       </p>
       <div className="md:flex md:gap-5 md:mt-9">
         <Swiper
-          className="max-w-280px md:w-460px md:max-w-none"
+          className="max-w-[280px] md:w-[460px] md:max-w-none"
           ref={swiperRef}
           modules={[EffectFade]}
           {...settings}
@@ -66,16 +66,16 @@ const WeOfferSlider = ({ sectionRef }: Props) => {
           ))}
         </Swiper>
 
-        <div className="mt-3 md:flex md:flex-col md:justify-between md:w-220px md:mt-0">
+        <div className="mt-3 md:flex md:flex-col md:justify-between md:w-[220px] md:mt-0">
           <div className="md:flex md:flex-col-reverse md:gap-6">
-            <p className="text-end font-extralight text-xs/6 tracking-0.2em md:mt-0 md:text-start">
+            <p className="text-end font-extralight text-xs/6 tracking-[0.2em] md:mt-0 md:text-start">
               {slides[activeSlideIndex]?.caption}
             </p>
             <Points goToSlide={goToSlide} activeSlideIndex={activeSlideIndex} />
           </div>
 
           {
-            <p className="mt-8 font-extralight text-sm md:text-justify md:mt-0 md:text-13px/5">
+            <p className="mt-8 font-extralight text-sm md:text-justify md:mt-0 md:text-[13px]/5">
               {slides[activeSlideIndex]?.description}
             </p>
           }
