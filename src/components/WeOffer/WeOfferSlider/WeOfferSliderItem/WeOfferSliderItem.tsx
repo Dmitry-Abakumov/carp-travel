@@ -18,6 +18,7 @@ const WeOfferSliderItem = ({ img }: Props) => {
   return (
     <>
       <picture>
+        <source srcSet={img.desktop} media="(min-width: 1280px)" />
         <source srcSet={img.tablet} media="(min-width: 768px)" />
         <Image
           className="md:w-full md:h-auto"

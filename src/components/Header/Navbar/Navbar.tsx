@@ -10,7 +10,9 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center">
       <Logo />
-      <ul className={`hidden md:flex gap-6 text-sm/normal tracking-widest`}>
+      <ul
+        className={`hidden md:flex md:gap-6 text-sm/normal tracking-widest xl:gap-[56px]`}
+      >
         {links.map(({ sectionName, sectionId }) => {
           return (
             <li key={sectionId}>

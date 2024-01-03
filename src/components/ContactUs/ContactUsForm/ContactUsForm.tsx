@@ -29,42 +29,44 @@ const ContactUsForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-4 mt-3"
+      className="flex flex-col gap-4 mt-3 md:flex-row md:mt-16"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div>
-        <label className="font-extralight text-xs/6 tracking-[0.2em]">
-          {fields.name.label}
-          <input
-            className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
-            {...register("name")}
-            {...fields.name}
-          />
-        </label>
-        {errors.name && (
-          <ValidationError errorMessage={errors.name.message as string} />
-        )}
+      <div className="flex flex-col gap-4">
+        <div>
+          <label className="font-extralight text-xs/6 tracking-[0.2em]">
+            {fields.name.label}
+            <input
+              className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+              {...register("name")}
+              {...fields.name}
+            />
+          </label>
+          {errors.name && (
+            <ValidationError errorMessage={errors.name.message as string} />
+          )}
+        </div>
+
+        <div>
+          <label className="font-extralight text-xs/6 tracking-[0.2em]">
+            {fields.email.label}
+            <input
+              className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+              {...register("email")}
+              {...fields.email}
+            />
+          </label>
+          {errors.email && (
+            <ValidationError errorMessage={errors.email.message as string} />
+          )}
+        </div>
       </div>
 
-      <div>
-        <label className="font-extralight text-xs/6 tracking-[0.2em]">
-          {fields.email.label}
-          <input
-            className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
-            {...register("email")}
-            {...fields.email}
-          />
-        </label>
-        {errors.email && (
-          <ValidationError errorMessage={errors.email.message as string} />
-        )}
-      </div>
-
-      <div>
+      <div className="flex flex-col">
         <label className="font-extralight text-xs/6 tracking-[0.2em]">
           {fields.message.label}
           <textarea
-            className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1"
+            className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:w-[463px] md:h-[221px]"
             {...register("message")}
             {...fields.message}
           />
@@ -72,11 +74,14 @@ const ContactUsForm = () => {
         {errors.message && (
           <ValidationError errorMessage={errors.message.message as string} />
         )}
-      </div>
 
-      <button className="uppercase self-end text-3xl/normal" type="submit">
-        Send
-      </button>
+        <button
+          className="self-end uppercase self-end text-3xl/normal mt-4"
+          type="submit"
+        >
+          Send
+        </button>
+      </div>
     </form>
   );
 };

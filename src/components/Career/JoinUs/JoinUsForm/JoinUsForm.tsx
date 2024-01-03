@@ -39,7 +39,7 @@ const JoinUsForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-5 md:mt-6"
+      className="flex flex-col gap-4 md:mt-8"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="md:flex md:gap-5">
@@ -128,7 +128,7 @@ const JoinUsForm = () => {
           <label className="block font-extralight text-xs/6 tracking-[0.2em]">
             {fields.message.label}
             <textarea
-              className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:h-[235px] md:w-[220px]"
+              className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:h-[228px] md:w-[220px]"
               {...register("message")}
               {...fields.message}
             />
