@@ -12,7 +12,7 @@ const OurGAllerySliderItem = ({ img }: Props) => {
     <picture>
       <source srcSet={img.tabDesk} media="(min-width: 768px)" />
       <Image
-        className="absolute bottom-0 md:static md:w-[415px] md:h-[294px] md:max-w-none"
+        className="absolute bottom-0 md:static md:w-full md:h-auto"
         alt=""
         src={img.mobile}
         loading="lazy"

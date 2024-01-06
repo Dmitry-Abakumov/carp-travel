@@ -15,6 +15,7 @@ const config: Config = {
         "not-active-points": "rgba(255, 255, 255, 0.5)",
         "input-bg-color": "rgba(255, 255, 255, 0.05)",
         "error-color": "#FF5757",
+        "section-bg-color": "#001826",
       },
       screens: {
         xs: "480px",

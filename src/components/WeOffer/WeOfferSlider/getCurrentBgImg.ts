@@ -17,5 +17,5 @@ export const getCurrentBgImg = ({
     return `url(${slidesData[activeSlideIndex].bgImg.tablet})`;
   }
 
-  return `url("${slidesData[activeSlideIndex].bgImg.desktop})"`;
+  return `url(${slidesData[activeSlideIndex].bgImg.desktop})`;
 };

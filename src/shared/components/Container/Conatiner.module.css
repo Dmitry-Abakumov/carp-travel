@@ -1,3 +1,3 @@
 .container {
-  @apply pl-5 pr-5 xs:mr-auto xs:ml-auto xs:w-[480px] md:w-[768px] md:pl-8 md:pr-8 xl:w-[1280px];
+  @apply pl-5 pr-5 xs:mr-auto xs:ml-auto xs:w-[480px] md:w-[768px] md:pl-8 md:pr-8 xl:w-[1280px] xl:pl-6 xl:pr-6;
 }

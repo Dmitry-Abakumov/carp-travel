@@ -32,23 +32,29 @@ const JoinUsForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit: SubmitHandler<FormData> = (data) => reset();
+  const onSubmit: SubmitHandler<FormData> = () => {
+    reset();
+  };
 
   const isPhonePlaceholderShow =
     !isPhoneInputOnFocus && watch("phone") === "+ 380";
 
   return (
     <form
-      className="flex flex-col gap-4 md:mt-8"
+      className="flex flex-col gap-4 md:mt-8 xl:mt-[14px] xl:gap-9"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="md:flex md:gap-5">
-        <div className="flex flex-col gap-4 md:h-[256px]">
+      <div className="md:flex md:gap-5 md:h-[256px] xl:h-[296px]">
+        <div className="flex flex-col gap-4 xl:gap-6 xl:w-full">
           <div className="relative">
             <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.name.label}
               <input
-                className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+                className={`bg-input-bg-color w-full h-6 pl-2 mt-1 xl:h-7 xl:text-[20px]/6 ${
+                  errors.name
+                    ? "placeholder:text-error-color"
+                    : "placeholder:text-secondary-text-color"
+                }`}
                 {...register("name")}
                 {...fields.name}
               />
@@ -65,7 +71,11 @@ const JoinUsForm = () => {
             <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.email.label}
               <input
-                className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+                className={`bg-input-bg-color w-full h-6 pl-2 mt-1 xl:h-7 xl:text-[20px]/6 ${
+                  errors.email
+                    ? "placeholder:text-error-color"
+                    : "placeholder:text-secondary-text-color"
+                }`}
                 {...register("email")}
                 {...fields.email}
               />
@@ -82,7 +92,11 @@ const JoinUsForm = () => {
             <label className="font-extralight text-xs/6 tracking-[0.2em]">
               {fields.position.label}
               <input
-                className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+                className={`bg-input-bg-color w-full h-6 pl-2 mt-1 xl:h-7 xl:text-[20px]/6 ${
+                  errors.position
+                    ? "placeholder:text-error-color"
+                    : "placeholder:text-secondary-text-color"
+                }`}
                 {...register("position")}
                 {...fields.position}
               />
@@ -100,7 +114,7 @@ const JoinUsForm = () => {
               {fields.phone.label}
               <span className="relative block mt-1 font-extralight text-xs/6 tracking-normal">
                 <input
-                  className="bg-input-bg-color w-full h-6 pl-2 placeholder:text-secondary-text-color"
+                  className="bg-input-bg-color w-full h-6 pl-2 placeholder:text-secondary-text-color xl:h-7 xl:text-[20px]/6"
                   {...register("phone")}
                   {...fields.phone}
                   onFocus={() => setIsPhoneInputOnFocus(true)}
@@ -108,7 +122,11 @@ const JoinUsForm = () => {
                 />
                 {isPhonePlaceholderShow && (
                   <span
-                    className={`absolute block top-0 left-11 text-secondary-text-color`}
+                    className={`absolute block top-0 left-11  xl:top-[2px] xl:left-[67px] xl:text-[20px]/6 ${
+                      errors.phone
+                        ? "text-error-color"
+                        : "text-secondary-text-color"
+                    }`}
                   >
                     (097) 12 34 567
                   </span>
@@ -128,7 +146,7 @@ const JoinUsForm = () => {
           <label className="block font-extralight text-xs/6 tracking-[0.2em]">
             {fields.message.label}
             <textarea
-              className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:h-[228px] md:w-[220px]"
+              className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:h-[228px] md:w-[220px] xl:w-[292px] xl:h-[277px]"
               {...register("message")}
               {...fields.message}
             />
@@ -158,7 +176,10 @@ const JoinUsForm = () => {
           )}
         </div>
 
-        <button className="uppercase self-end text-3xl/normal" type="submit">
+        <button
+          className="uppercase self-end text-3xl/normal xl:text-[32px]"
+          type="submit"
+        >
           Send
         </button>
       </div>

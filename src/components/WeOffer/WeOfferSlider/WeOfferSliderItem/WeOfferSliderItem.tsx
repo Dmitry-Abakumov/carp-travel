@@ -21,12 +21,12 @@ const WeOfferSliderItem = ({ img }: Props) => {
         <source srcSet={img.desktop} media="(min-width: 1280px)" />
         <source srcSet={img.tablet} media="(min-width: 768px)" />
         <Image
-          className="md:w-full md:h-auto"
+          className="md:h-full md:w-auto"
           alt=""
           src={img.mobile}
           loading="lazy"
           width="280"
-          height="413"
+          height="213"
         />
       </picture>
     </>

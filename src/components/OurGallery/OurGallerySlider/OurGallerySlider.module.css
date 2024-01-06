@@ -1,6 +1,8 @@
 @media screen and (min-width: 768px) {
   .imgWrap {
     position: relative;
+    width: 121px;
+    height: auto;
   }
 
   .imgWrap::after {
@@ -11,12 +13,24 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 120px;
+    width: 122px;
     height: 86px;
     background: linear-gradient(
-      rgba(2, 15, 8, 0.75),
-      rgba(2, 15, 8, 0.75),
-      rgba(2, 15, 8, 0.75)
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
     );
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .imgWrap {
+    width: 289px;
+    height: auto;
+  }
+
+  .imgWrap::after {
+    width: 289px;
+    height: auto;
   }
 }

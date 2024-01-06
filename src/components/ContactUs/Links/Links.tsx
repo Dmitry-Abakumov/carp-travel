@@ -2,14 +2,14 @@ import css from "./Links.module.css";
 
 const Links = () => {
   return (
-    <div className="flex flex-col mt-9 gap-6 md:flex-row md:gap-[90px]">
+    <div className="flex flex-col mt-9 gap-6 md:flex-row md:gap-[90px] xl:mt-0 xl:flex-col xl:gap-[124px]">
       <div className="self-end md:self-start">
         <ul className="flex flex-col">
           <li className="flex items-center gap-5 self-end">
             <a className={css.link} href="tel:+380981234567">
               +380 (98) 12 34 567
             </a>
-            <p className="font-extralight text-xs/5">Phone number</p>
+            <p className={css.linkBlockName}>Phone number</p>
           </li>
           <li className="ml-[26px] md:ml-[30px]">
             <a className={css.link} href="tel:+380731234567">
@@ -26,12 +26,12 @@ const Links = () => {
           >
             support@carptravel.com
           </a>
-          <p className="font-extralight text-xs/5">E-mail</p>
+          <p className={css.linkBlockName}>E-mail</p>
         </div>
       </div>
 
       <div className="flex self-end gap-5 mr-4 md:mr-0">
-        <p className="font-extralight text-xs/5">Follow us</p>
+        <p className={css.linkBlockName}>Follow us</p>
         <ul className="">
           <li className="flex items-center gap-5">
             <a className={css.link} href="#">

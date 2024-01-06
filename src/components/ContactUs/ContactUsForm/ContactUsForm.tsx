@@ -29,15 +29,17 @@ const ContactUsForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-4 mt-3 md:flex-row md:mt-16"
+      className="flex flex-col gap-4 mt-3 md:flex-row md:mt-16 xl:flex-col xl:mt-0 xl:w-[607px]"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="flex flex-col gap-4">
-        <div>
-          <label className="font-extralight text-xs/6 tracking-[0.2em]">
+      <div className="flex flex-col gap-4 xl:flex-row xl:gap-5">
+        <div className="xl:w-full">
+          <label className="font-extralight text-xs/6 tracking-[0.2em] xl:block">
             {fields.name.label}
             <input
-              className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+              className={`bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color xl:h-6 xl:text-[20px]/6 ${
+                errors.name ? "placeholder:text-error-color" : ""
+              }`}
               {...register("name")}
               {...fields.name}
             />
@@ -47,11 +49,13 @@ const ContactUsForm = () => {
           )}
         </div>
 
-        <div>
-          <label className="font-extralight text-xs/6 tracking-[0.2em]">
+        <div className="xl:w-full">
+          <label className="font-extralight text-xs/6 tracking-[0.2em] xl:block">
             {fields.email.label}
             <input
-              className="bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color"
+              className={`bg-input-bg-color w-full h-6 pl-2 mt-1 placeholder:text-secondary-text-color xl:h-6 xl:text-[20px]/6 ${
+                errors.email ? "placeholder:text-error-color" : ""
+              }`}
               {...register("email")}
               {...fields.email}
             />
@@ -66,7 +70,7 @@ const ContactUsForm = () => {
         <label className="font-extralight text-xs/6 tracking-[0.2em]">
           {fields.message.label}
           <textarea
-            className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:w-[463px] md:h-[221px]"
+            className="block bg-input-bg-color resize-none pl-2 w-full h-48 mt-1 md:w-[463px] md:h-[221px] xl:w-full xl:h-[174px]"
             {...register("message")}
             {...fields.message}
           />
@@ -76,7 +80,7 @@ const ContactUsForm = () => {
         )}
 
         <button
-          className="self-end uppercase self-end text-3xl/normal mt-4"
+          className="self-end uppercase text-3xl/normal mt-4 xl:mt-6"
           type="submit"
         >
           Send

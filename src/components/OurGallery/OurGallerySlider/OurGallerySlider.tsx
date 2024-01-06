@@ -22,7 +22,6 @@ const OurGallerySlider = () => {
 
   useEffect(() => {
     swiperRef.current?.swiper.on("slideChange", () => {
-      console.log("slide changed");
       const activeIndex = swiperRef.current?.swiper.realIndex as number;
       setActiveSlideIndex(activeIndex);
     });
@@ -34,23 +33,24 @@ const OurGallerySlider = () => {
     activeSlideIndex !== 0 ? activeSlideIndex - 1 : slides.length - 1;
 
   return (
-    <div className="md:flex md:items-end md:gap-6 md:mt-[72px]">
+    <div className="md:flex md:items-end md:gap-6 md:mt-[72px] xl:mt-6">
       {(currentScreenWidth as number) > 767 && (
-        <div className="md:flex md:flex-col md:justify-end md:gap-[47px]">
+        <div className="md:flex md:flex-col md:justify-end md:gap-[47px] xl:gap-[70px]">
           <div className={css.imgWrap}>
             <picture>
               <Image
                 alt=""
                 src={slides[prevIndex]?.img.tabDesk}
-                width="120"
-                height="87"
+                width="415"
+                height="294"
+                className="md:w-full md:h-auto opacity-[0.5]"
               />
             </picture>
           </div>
 
           <button
             onClick={() => swiperRef?.current?.swiper.slidePrev()}
-            className="md:uppercase md:self-end md:font-thin md:text-[33px]/normal"
+            className="md:uppercase md:self-end md:font-thin md:text-[33px]/normal md:mb-4 xl:mb-0"
             type="button"
           >
             Prev
@@ -59,7 +59,7 @@ const OurGallerySlider = () => {
       )}
 
       <Swiper
-        className="max-w-[280px] h-[689px] pointer-events-none md:flex md:justify-center md:h-auto md:w-[415px] md:max-w-none md:pointer-events-auto"
+        className="max-w-[280px] h-[689px] pointer-events-none md:flex md:justify-center md:h-auto md:w-[415px] md:max-w-none md:pointer-events-auto xl:w-[606px]"
         direction={
           (currentScreenWidth as number) < 768 ? "vertical" : "horizontal"
         }
@@ -77,20 +77,21 @@ const OurGallerySlider = () => {
       </Swiper>
 
       {(currentScreenWidth as number) > 767 && (
-        <div className="md:flex md:flex-col md:justify-end md:gap-[47px]">
+        <div className="md:flex md:flex-col md:justify-end md:gap-[47px] xl:gap-[70px]">
           <div className={css.imgWrap}>
             <picture>
               <Image
                 alt=""
                 src={slides[nextIndex]?.img.tabDesk}
-                width="120"
-                height="87"
+                width="415"
+                height="294"
+                className="md:w-full md:h-auto opacity-[0.5]"
               />
             </picture>
           </div>
           <button
             onClick={() => swiperRef?.current?.swiper.slideNext()}
-            className="md:uppercase md:self-start md:font-thin md:text-[33px]/normal"
+            className="md:uppercase md:self-start md:font-thin md:text-[33px]/normal md:mb-4 xl:mb-0"
             type="button"
           >
             Next

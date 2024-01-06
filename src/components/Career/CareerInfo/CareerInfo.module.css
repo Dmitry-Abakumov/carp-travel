@@ -9,3 +9,11 @@
     background-repeat: no-repeat;
   }
 }
+
+.subtitle {
+  @apply font-normal text-sm md:text-base/5 xl:w-[220px] xl:text-[18px]/6;
+}
+
+.listItem {
+  @apply text-end max-w-[180px] md:max-w-[225px] xl:flex xl:gap-6 xl:max-w-none;
+}

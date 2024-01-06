@@ -29,7 +29,7 @@ const Checkbox = forwardRef<HTMLInputElement, Props>(
         </label>
         {label && (
           <label
-            className={`font-extralight text-xs/[22px] ${labelClassName}`}
+            className={`font-extralight text-xs/[22px] xl:leading-[24px] ${labelClassName}`}
             htmlFor={id}
           >
             {label}

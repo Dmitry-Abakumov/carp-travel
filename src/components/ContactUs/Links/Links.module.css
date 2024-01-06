@@ -1,9 +1,7 @@
 .link {
-  @apply text-sm/6;
+  @apply text-sm/6 md:text-base/normal xl:text-[18px]/6;
 }
 
-@media screen and (min-width: 768px) {
-  .link {
-    @apply text-base/normal;
-  }
+.linkBlockName {
+  @apply font-extralight text-xs/5 xl:leading-6;
 }
