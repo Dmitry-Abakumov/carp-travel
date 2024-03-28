@@ -1,2 +1,1 @@
-import WeOfferSlider from "./WeOfferSlider";
-export default WeOfferSlider;
+export { default } from "./WeOfferSlider";

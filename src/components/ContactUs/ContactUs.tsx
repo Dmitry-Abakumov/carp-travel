@@ -1,14 +1,12 @@
 import Links from "./Links";
 import ContactUsForm from "./ContactUsForm";
 
-import Container from "@/shared/components/Container";
-
 import css from "./ContactUs.module.css";
 
 const ContactUs = () => {
   return (
     <section id="contactUs" className={css.section}>
-      <Container>
+      <div className="container">
         <h2 className="uppercase font-thin text-[40px]/[56px] tracking-tighter md:text-[67px]/[1] xl:text-[98px]/[119px]">
           Contact <span className="font-medium">US</span>
         </h2>
@@ -16,7 +14,7 @@ const ContactUs = () => {
           <Links />
           <ContactUsForm />
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

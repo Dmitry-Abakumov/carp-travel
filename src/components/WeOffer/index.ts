@@ -1,2 +1,1 @@
-import WeOffer from "./WeOffer";
-export default WeOffer;
+export { default } from "./WeOffer";

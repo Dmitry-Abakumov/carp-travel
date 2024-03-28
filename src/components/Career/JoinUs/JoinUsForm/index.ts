@@ -1,2 +1,1 @@
-import JoinUsForm from "./JoinUsForm";
-export default JoinUsForm;
+export { default } from "./JoinUsForm";

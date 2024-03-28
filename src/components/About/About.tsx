@@ -1,5 +1,3 @@
-import Container from "@/shared/components/Container";
-
 import data from "./about-data.json";
 
 import css from "./About.module.css";
@@ -8,7 +6,7 @@ const About = () => {
   const { aboutTeam, weBelieve, ourMethods } = data;
   return (
     <section id="about" className={css.section}>
-      <Container className="relative flex flex-col">
+      <div className="container relative flex flex-col">
         <div className="md:flex md:gap-[76px] xl:gap-6">
           <h2 className="uppercase text-[40px]/[56px] font-medium -tracking-[0.04em] md:text-[67px]/none xl:text-[98px]">
             <span className="font-thin">Who</span> we are
@@ -41,7 +39,7 @@ const About = () => {
             <span className="font-normal">We use methods</span> {ourMethods}
           </p>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

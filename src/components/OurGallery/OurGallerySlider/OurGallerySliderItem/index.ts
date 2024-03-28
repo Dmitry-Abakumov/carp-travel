@@ -1,2 +1,1 @@
-import OurGallerySlider from "../OurGallerySlider";
-export default OurGallerySlider;
+export { default } from "./OurGallerySliderItem";

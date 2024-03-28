@@ -4,8 +4,6 @@ import { useRef } from "react";
 
 import WeOfferSlider from "./WeOfferSlider";
 
-import Container from "@/shared/components/Container";
-
 const WeOffer = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -15,13 +13,13 @@ const WeOffer = () => {
       id="weOffer"
       ref={sectionRef}
     >
-      <Container className="relative">
+      <div className="container relative">
         <h2 className="uppercase font-medium text-[40px]/[56px] -tracking-[0.04em] md:text-[67px]/none xl:text-[98px]">
           <span className="font-thin">We</span> offer
         </h2>
 
         <WeOfferSlider sectionRef={sectionRef} />
-      </Container>
+      </div>
     </section>
   );
 };

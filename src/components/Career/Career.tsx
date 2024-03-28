@@ -1,8 +1,6 @@
 import CareerInfo from "./CareerInfo";
 import JoinUs from "./JoinUs";
 
-import Container from "@/shared/components/Container";
-
 import css from "./Career.module.css";
 
 const Career = () => {

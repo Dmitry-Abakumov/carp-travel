@@ -1,2 +1,1 @@
-import OurGallery from "./OurGallery";
-export default OurGallery;
+export { default } from "./OurGallery";

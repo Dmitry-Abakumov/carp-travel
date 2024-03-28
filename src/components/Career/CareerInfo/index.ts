@@ -1,2 +1,1 @@
-import CareerInfo from "./CareerInfo";
-export default CareerInfo;
+export { default } from "./CareerInfo";

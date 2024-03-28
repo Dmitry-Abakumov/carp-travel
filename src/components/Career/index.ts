@@ -1,2 +1,1 @@
-import Career from "./Career";
-export default Career;
+export { default } from "./Career";

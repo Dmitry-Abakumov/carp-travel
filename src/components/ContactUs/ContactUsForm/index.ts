@@ -1,2 +1,1 @@
-import ContactUsForm from "./ContactUsForm";
-export default ContactUsForm;
+export { default } from "./ContactUsForm";

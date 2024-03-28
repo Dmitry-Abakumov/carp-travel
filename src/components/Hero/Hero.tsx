@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 
-import Container from "@/shared/components/Container";
-
 import data from "./hero-data.json";
 
 import css from "./Hero.module.css";
@@ -13,7 +11,7 @@ const Hero = () => {
 
   return (
     <section className={css.section}>
-      <Container className="relative">
+      <div className="container relative">
         <div className="flex flex-col md:flex md:flex-row-reverse md:justify-between">
           <p className="self-end text-end w-[118px] font-thin text-4xl/normal tracking-wider leading-none uppercase md:self-start md:text-[67px]/none md:tracking-[0.13em] md:w-[230px] xl:w-[305px] xl:text-[98px] xl:tracking-normal">
             <span className="font-medium">7</span>days
@@ -72,7 +70,7 @@ const Hero = () => {
             </picture>
           </button>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

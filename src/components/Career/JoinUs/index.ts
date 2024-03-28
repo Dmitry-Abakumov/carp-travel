@@ -1,2 +1,1 @@
-import JoinUs from "./JoinUs";
-export default JoinUs;
+export { default } from "./JoinUs";

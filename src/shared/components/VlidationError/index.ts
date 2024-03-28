@@ -1,2 +1,1 @@
-import ValidationError from "./ValidationError";
-export default ValidationError;
+export { default } from "./ValidationError";
